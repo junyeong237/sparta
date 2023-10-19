@@ -158,7 +158,7 @@ public class Console_View {
 
     public void total_view(Order orders){
         int total = 0;
-        for(Menu menu : orders.getOrder_menu()){
+        for(Menu menu : orders.getSold_list()){
             total += menu.getPrice() * (menu.getCount());
         }
         System.out.println("\n[ 총 판매금액 현황 ]");

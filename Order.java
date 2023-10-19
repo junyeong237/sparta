@@ -7,11 +7,11 @@ import java.util.ArrayList;
 public class Order {
 
     private ArrayList<Menu> order_menu;
-    //private ArrayList<Menu> sold_list;
+    private ArrayList<Menu> sold_list;
 
     public Order(){
         order_menu = new ArrayList<>();
-        //sold_list = new ArrayList<>();
+        sold_list = new ArrayList<>();
     }
 
     public void add_menu(Menu menu){
@@ -20,6 +20,7 @@ public class Order {
             return;
         }
         this.order_menu.add(menu);
+        this.sold_list.add(menu);
         menu.add_menu_count();
 
 
@@ -35,5 +36,9 @@ public class Order {
 
     public ArrayList<Menu> getOrder_menu() {
         return order_menu;
+    }
+
+    public ArrayList<Menu> getSold_list() {
+        return sold_list;
     }
 }
