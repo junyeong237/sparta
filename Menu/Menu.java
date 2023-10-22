@@ -8,6 +8,7 @@ public class Menu {
 
     private int count;
     private String option;
+
     public Menu(){
 
     }
@@ -15,7 +16,6 @@ public class Menu {
     public Menu(String name,String content){
         this.name = name;
         this.content = content;
-
     }
 
     public String getName() {
@@ -52,12 +52,26 @@ public class Menu {
     public void setPrice(int pri) {
         return;
     }
+
+    public String getType(){return "";}
     public String getOption() {
         return option;
     }
 
     public void setOption(String option) {
-        this.option = option;
+        return;
+    }
+
+    public String getOption2(){
+        return "";
+    }
+
+    public int getOpt2_price(){
+        return 0;
+    }
+
+    public String getOption1(){
+        return "";
     }
 
     @Override

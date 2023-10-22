@@ -20,7 +20,7 @@ public class Order {
             return;
         }
         this.order_menu.add(menu);
-        this.sold_list.add(menu);
+        //this.sold_list.add(menu);
         menu.add_menu_count();
 
 
